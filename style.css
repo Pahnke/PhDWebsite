@@ -1,0 +1,59 @@
+html{
+  font-size: 10px;
+}
+
+header{
+  display: flex;
+  flex: row;
+  text-align: right;
+}
+
+body{
+  background-image: url(http://fastlaneart.org/wp-content/uploads/2013/09/FreeGreatPicture.com-19820-blue-vintage-wallpaper-background.jpg);
+}
+
+#CollegeLogo img{
+  height: 10rem;
+  width: 35rem;
+
+}
+
+#Collegename{
+  font-size: 5rem;
+  width: 100%;
+  text-align: right;
+  font-family: fantasy;
+  color: black;
+}
+
+#Doctorname{
+  font-size: 5rem;
+  font-family: Times;
+  font-weight: bold;
+}
+
+#PhDtitle{
+  font-size: 2rem;
+}
+
+#verticalnav{
+  font-size: 1.5rem;
+  color: DarkBlue;
+}
+
+#navbarNavDropdown{
+  font-size: 3rem;
+}
+
+#Phdimage{
+  text-align: right;
+}
+
+#Phdimage img{
+  height: 30rem;
+  width: 30rem;
+}
+#maintext {
+  border-left: 1rem solid DodgerBlue;
+
+}
