@@ -1,7 +1,6 @@
 html{
   font-size: 10px;
 }
-
 header{
   display: flex;
   flex: row;
@@ -9,7 +8,11 @@ header{
 }
 
 body{
-  background-image: url(http://fastlaneart.org/wp-content/uploads/2013/09/FreeGreatPicture.com-19820-blue-vintage-wallpaper-background.jpg);
+  padding-left: 20%;
+  padding-right: 20%;
+  background: #f9f5d6;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #CollegeLogo img{
@@ -36,24 +39,296 @@ body{
   font-size: 2rem;
 }
 
-#verticalnav{
+#sideNav{
   font-size: 1.5rem;
-  color: DarkBlue;
+  color: black;
 }
 
 #navbarNavDropdown{
-  font-size: 3rem;
-}
-
-#Phdimage{
-  text-align: right;
+  font-size: 2rem;
+  background: linear-gradient(to bottom, #f9f5d6, white);
+  border-bottom: 0.05rem solid black;
 }
 
 #Phdimage img{
-  height: 30rem;
-  width: 30rem;
+  height: 40rem;
+  width: 40rem;
 }
-#maintext {
-  border-left: 1rem solid DodgerBlue;
 
+#maintext {
+  border-left: 1rem solid #c9c9c9;
+  font-size: 5rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+
+}
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: black;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+#thanks {
+  background: radial-gradient(#fce0e9,#f9f5d6);
+}
+#thanks::after {
+  content: none;
+}
+#thanks div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#thanks h2 {
+  margin-bottom: 60px;
+  color: #333;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+#thanks p {
+  color: #333;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+}
+#thanks p a {
+  color: #333;
+  text-decoration: none;
+  transition: color .3s;
+}
+#thanks p a:hover {
+  color: #888;
+}
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+#section01 {
+  background: radial-gradient(#f9eb98, #f9f5d6);
+
+}
+#section01 a {
+  padding-top: 60px;
+}
+#section01 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+#section02 {
+  background: radial-gradient(#cdffa8,#f9f5d6);
+}
+#section03 {
+  background: radial-gradient(#c1fff8,#f9f5d6);
+}
+#section04 {
+  background: radial-gradient(#dcccf9,#f9f5d6);
+}
+
+#section02 a {
+  padding-top: 60px;
+}
+#section02 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid black;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section02 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+#section03 a {
+  padding-top: 60px;
+}
+#section03 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid black;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section03 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#section03 a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+#section04 a {
+  padding-top: 60px;
+}
+#section04 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
 }
