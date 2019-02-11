@@ -44,6 +44,9 @@ body{
   color: black;
 }
 
+#dropdown{
+  font-size: 2rem;
+}
 #navbarNavDropdown{
   font-size: 2rem;
   background: linear-gradient(to bottom, #f9f5d6, white);
@@ -55,10 +58,101 @@ body{
   width: 40rem;
 }
 
+#mainsubheading{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#bullet1{
+  font-size: 2.5rem;
+}
+#bullet2{
+  font-size: 2.5rem;
+}
+#bullet3{
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+}
+#publication{
+  font-size: 2.5rem;
+}
+#remaining{
+  font-size: 2.5rem;
+}
 #maintext {
   border-left: 1rem solid #c9c9c9;
   font-size: 5rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
+
+#heading1{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+#text1 {
+  font-size: 1.92rem;
+}
+
+#heading2{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+#text2{
+  font-size: 2.09rem;
+}
+
+#heading3{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+#subheading3{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+#text3{
+  font-size: 2.4rem;
+}
+
+#heading4{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+#subheading41{
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+#subheading42{
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+#subheading43{
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+#text41{
+  font-size: 2.2rem;
+}
+#text42{
+  font-size: 2.2rem;
+}
+#text43{
+  font-size: 2.2rem;
+}
+
 
 .sticky {
   position: fixed;
@@ -156,7 +250,8 @@ section h1 {
 
 #section01 {
   background: radial-gradient(#f9eb98, #f9f5d6);
-
+  width: 1000px;
+  height: 1000px;
 }
 #section01 a {
   padding-top: 60px;
@@ -177,12 +272,18 @@ section h1 {
 
 #section02 {
   background: radial-gradient(#cdffa8,#f9f5d6);
+  width: 1000px;
+  height: 1000px;
 }
 #section03 {
   background: radial-gradient(#c1fff8,#f9f5d6);
+  width: 1000px;
+  height: 1000px;
 }
 #section04 {
   background: radial-gradient(#dcccf9,#f9f5d6);
+  width: 1000px;
+  height: 1000px;
 }
 
 #section02 a {
