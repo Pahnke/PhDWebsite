@@ -4,7 +4,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -137,12 +137,12 @@
       vulnerable and the data becomes hard to anonymize. While a possible solution to this is to disable the direct access to the whole data set, only exposing aggregate data, and letting data to be accessed only by sending queries by authorized
       analysts, the attackers can still succeed by sending appropriate queries to launch an intersection attack. The attacker can retrieve the data by sending two queries such that the set of the aggregate data of the first query is completely
       contained in the set of data of the second query. Therefore, by correctly modifying the questions asked, the attacker can obtain the data of an individual user by calculating the difference between the two answers.
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
     <a href="#section02" style="color: black"><span></span>Scroll</a>
   </section>
@@ -162,8 +162,10 @@
       only the sum of the bits is made public. Another more advanced technique of encryption is homomorphic encryption.
     </div>
     <div id="textgeneral">
-    <img src="images/MPC.png" align="right" alt="MPC" style="margin: 25px 10px;max-width:100%;height:auto;"></img>
-    <img src="images/Homomorphic2.png" align="right" alt="Homomorphic encryption" style="margin: 25px 10px;max-width:100%;height:auto;"></img>
+      <div style="display: flex; justify-content: center;">
+        <img src="images/MPC.png" align="right" alt="MPC" style="margin: 25px 10px;max-width:100%;height:auto;"></img>
+      </div>
+      <img src="images/Homomorphic2.png" align="right" alt="Homomorphic encryption" style="margin: 25px 10px;max-width:100%;height:auto;"></img>
       Equipped with all the capabilities of ordinary encryption, homomorphic encryption also allows operations between encrypted data.
       In other words, the order of decryption and performing operations is unimportant and will get the same result. In the process of encryption and decryption, no input or output is put at risk. Also, avoidance of decrypting every bit of
       information significantly reduces the cost of cryptography. The problem of cloud computing mentioned above can be solved perfectly by using homomorphic encryption. In the case of intersection attack, the solution is usually much more
@@ -197,7 +199,9 @@
       properties. The difference in these two queries will be the user’s data. Although this protection technique is flawed, the query-based systems could be a solution to the privacy problem. Differential privacy is a statistical method that adds
       noise to the user data, making it harder to learn about specific individuals while maintaining accuracy at the population level. The inventors of the technique won the Gödel Prize in 2017 (their paper was published in 2006). Differential
       privacy can be implemented in two ways: local or private.</div>
-    <img src="images/Differential Privacy.png" align="center" alt="Differential privacy" style="margin: 25px 10px;max-width:100%;height:auto;"></img>
+    <div style="display: flex; justify-content: center;">
+      <img src="images/Differential Privacy.png" align="center" alt="Differential privacy" style="margin: 25px 10px;max-width:100%;height:auto;"></img>
+    </div>
     <div id="textgeneral">
       In local models, the users add noise to their data and send it to an aggregator, which, in turn, sends it to the data scientists. The accumulated noise makes it impractical to learn anything in many real life applications, requiring a larger
       dataset than would be required if the noise wasn’t added. In global models users give their data to an aggregator, where it is mixed with noise and sent to the data scientist. A first problem with this approach is that the aggregator can be
@@ -256,7 +260,7 @@
     <a href="#CollegeLogo" style="color: black"><span></span>Top of the Page</a>
   </section>
   <br>
-<!--
+  <!--
   <section id="thanks">
     <div>
       <h2>Thanks!</h2>
