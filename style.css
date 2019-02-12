@@ -88,6 +88,10 @@ body{
   padding-bottom: 15px;
 }
 
+#textgeneral{
+  font-size: 2.2rem;
+}
+
 #heading1{
   text-align: center;
   font-size: 4rem;

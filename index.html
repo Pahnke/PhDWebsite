@@ -41,7 +41,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#Collegename">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#section01">Research Problem</a>
@@ -68,7 +68,7 @@
   <div class="row">
 
     <div id="sideNav" class="list-group">
-      <a class="list-group-item list-group-item-action" href="Home.html">Home</a>
+      <a class="list-group-item list-group-item-action" href="#Collegename">Home</a>
       <a class="list-group-item list-group-item-action" href="#section01">Research Problem</a>
       <a class="list-group-item list-group-item-action" href="#section02">Different Solutions</a>
       <a class="list-group-item list-group-item-action" href="#section03">Field of Research</a>
@@ -106,34 +106,39 @@ The authors consider the main contribution to be the method of exploiting the no
   </div>
 </ul>
 
+<br>
+
 <section id="section01" class="demo">
   <div id="heading1">
   Research Problem
   </div>
-  <div id="text1">
+  <div id="textgeneral">
   The definition of privacy is having control over your data. Although some people argue that privacy does not exist on the Internet, Andrea maintained that releasing some personal information is not equal to ignorance of privacy. While we only want to share a certain part of our personal information online, in general, we don’t want all of our data to be accessed by attackers. For example, if a message is sent between two friends, and the friends don’t want anyone else to read the message no matter what, the basic attack model is formed. In the model, the two friends are the users and anyone else who wants to retrieve the message are the attackers. Another possible concern arises, when cloud computing (uploading files and data onto the cloud) is applied. Cloud computing is extremely common these days since it is able to bring the advantage of storing less information on local machines. This means that more advanced experiments or analysis, for example machine learning, can be conducted by renting a server or virtual machine (VM). While there might be a contract between users and the company hosting the cloud that none of the data of the experiment should be shared with any other party, renting a server can implicitly leak your data to the company that owns the server/VM. Consequently, the absolute privacy is not guaranteed in this case. When the problem comes to big data (however useful it may be), yet another technical issue appears as big data is highly sensitive and it contains behavioural information about users. Sometimes, with only behavioural data and no additional data about the user, a user can be identified. We can try to fix the problem by simply removing the name of the users but privacy concerns still exist. When data is rather complicated and big, it includes a large number of attributes (name, age, sex, educational background, etc.) which can be represented as a <i>n</i>-column vector and <i>n</i> is quite large in this case. When <i>n</i> increases, the possibility of two vectors having exactly the same attributes on <i>n</i> dimensions decreases dramatically. Thus, an attacker is relatively easily able to identify individual users even if some fields such as “name” are removed. According to a contemporary science journal, for a large enough data set, as long as four attributes, for example locations at four different times, are known, the possibility to uniquely identify the individual user is as high as 95%. Therefore, the high probability of correct identification comes at an extremely low cost for the attacker. When an attacker has certain access to part of the data, the user is even more vulnerable and the data becomes hard to anonymize. While a possible solution to this is to disable the direct access to the whole data set, only exposing aggregate data, and letting data to be accessed only by sending queries by authorized analysts, the attackers can still succeed by sending appropriate queries to launch an intersection attack. The attacker can retrieve the data by sending two queries such that the set of the aggregate data of the first query is completely contained in the set of data of the second query. Therefore, by correctly modifying the questions asked, the attacker can obtain the data of an individual user by calculating the difference between the two answers.
   <a href="#section02"style="color: black"><span></span>Scroll</a>
 </section>
+<br>
 <section id="section02" class="demo">
   <div id="heading2">
     Different Solutions
   </div>
-  <div id="text2">
+  <div id="textgeneral">
     <img src="images/homomorphic.png" align="right" alt="Homomorphic encryption"></img>
     The basic solution to the simple attack model is using end to end encryption (E2EE). E2EE protects the data from being revealed in the process of communication. Basically, it encrypts data at the web level and decrypts it at the database or server. WhatsApp is an app which uses E2EE to protect users messages from attackers. In principle, others do not have access to the information in a private conversation. The second protective strategy is by employing Multiparty Computation (MPC). It only reveals aggregated information, but conceals individual information. For example, there are some people in the room, each of whom owns a secret bit of number, either 0 or 1. Instead of disclosing the choice of every individual, only the sum of the bits is made public. Another more advanced technique of encryption is homomorphic encryption. Equipped with all the capabilities of ordinary encryption, homomorphic encryption also allows operations between encrypted data. In other words, the order of decryption and performing operations is unimportant and will get the same result. In the process of encryption and decryption, no input or output is put at risk. Also, avoidance of decrypting every bit of information significantly reduces the cost of cryptography. The problem of cloud computing mentioned above can be solved perfectly by using homomorphic encryption. In the case of intersection attack, the solution is usually much more complicated. An ideally minimum amount of noise needs to be added to the data so that no individual data can be retrieved by only sending different queries. The amount of noise added to the data set should be precisely determined by sophisticated mathematical calculations such that no information of any individual user may be disclosed. Typically, alongside the high cost of such mathematical analysis, the data itself tends to become harder to use since usually a lot of noise needs to be added to ensure absolute privacy. Meanwhile, the accuracy drops as noise increases. As a result, sometimes a balance or trade-off between privacy and utility is achieved according to certain limitations of privacy or accuracy. For example, we may need relatively high accuracy with error less than 5%. Thus, complete privacy might be sacrificed for a better experimental result. Differential privacy is just a realm that aims at finding a balance between privacy and utility. However, for most systems, the disparity between the current privacy-preserving model and the ideal one is still considerably large. It generally takes too much time to do even simple encryption when applying homomorphic encryption. Also, protocol or software development can also be another viable approach to ensure data privacy.
   </div>
   <a href="#section03"style="color: black"><span></span>Scroll</a>
 </section>
+<br>
 <section id="section03" class="demo">
   <div id="heading3">
     Field of Research - Differential Privacy
   </div>
-  <div id="text3">
+  <div id="textgeneral">
     A method of protecting privacy is keeping the user data in a database which doesn't answer queries when the data is small enough for an attacker to learn anything at the individual level. The attacker, however, can make the queries in such a way that he can deduce the information he wants: for example, if he knows an individual’s data has some specific properties, he can first ask for information about all the users and then query for the users not satisfying the specific properties. The difference in these two queries will be the user’s data. Although this protection technique is flawed, the query-based systems could be a solution to the privacy problem. Differential privacy is a statistical method that adds noise to the user data, making it harder to learn about specific individuals while maintaining accuracy at the population level. The inventors of the technique won the Gödel Prize in 2017 (their paper was published in 2006). Differential privacy can be implemented in two ways: local or private. In local models, the users add noise to their data and send it to an aggregator, which, in turn, sends it to the data scientists. The accumulated noise makes it impractical to learn anything in many real life applications, requiring a larger dataset than would be required if the noise wasn’t added. In global models users give their data to an aggregator, where it is mixed with noise and sent to the data scientist. A first problem with this approach is that the aggregator can be corrupt, resulting in the users losing their privacy. Cryptography has shown, however, that it is possible to perform computations on encrypted data without knowing the decryption key. This means that the information can be encrypted by the users, processed by aggregators and then sent to the data scientists for decryption.
 Differential privacy is a growing topic in computer science research (which can be seen in the number of citations of related academic papers), but it hasn’t reached an acceptable trade-off between the utility of the modified data and the users’ privacy.
   </div>
   <a href="#section04"style="color: black"><span></span>Scroll</a>
 </section>
+<br>
 <section id="section04" class="demo">
   <div id="heading4">
     Pioneers of the Field
@@ -141,24 +146,25 @@ Differential privacy is a growing topic in computer science research (which can 
   <div id="subheading41">
     Amazon
   </div>
-  <div id="text41">
+  <div id="textgeneral">
     Amazon wants to be a customer focused company which has led them to research new methods of keeping users data private and secure. They have recently produced a paper which investigates the correct amount of noise needed to be added to keep individual users’ data private while still allowing machine learning algorithms to learn frequent patterns in the data. In the paper they reveal a new method which allows a higher level of privacy with the same level of accuracy or a higher level of accuracy with the same level of privacy.
   </div>
   <div id="subheading42">
     Apple
   </div>
-  <div id="text42">
+  <div id="textgeneral">
     To improve a user’s experience on an Apple product, Apple will record data about how a user uses their product. The user however doesn’t want Apple to know exactly what they’re doing and the user is entitled to their privacy. This is why Apple has started researching and using differential privacy so they can record data about their users and then add noise to it so they mask the individual user’s data. On a large scale, Apple can analyse the accumulated data and learn how to improve users’ experiences but on a individual scale, Apple doesn’t know and can’t find out what their users are doing. They also limit the amount of data sent from an individual user so if someone tries to take an average of the data sent from one user, the noise will still have a prominent effect which means the users’ data will still be private.
   </div>
   <div id="subheading43">
     Google
   </div>
-  <div id="text43">
+  <div id="textgeneral">
     Google was one of the first companies to use differential privacy commercially. Google does a lot of research into machine learning, which requires a large amount of practice data and the data needs to be kept private when being used. To do this Google created their own system called RAPPOR (Randomized Aggregatable Privacy-Preserving Ordinal Response) which can collect statistics from users but doesn’t breach their individual privacy. Google Brain has also started to research differential privacy and have released some papers investigating it.
   </div>
 
   <a href="#thanks"style="color: black"><span></span>Scroll</a>
 </section>
+<br>
 
 <section id="thanks">
   <div>
