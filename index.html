@@ -125,16 +125,22 @@
     <div id="textgeneral">
       The definition of privacy is having control over your data. Although some people argue that privacy does not exist on the Internet, Andrea maintained that releasing some personal information is not equal to ignorance of privacy. While we only
       want to share a certain part of our personal information online, in general, we don’t want all of our data to be accessed by attackers. For example, if a message is sent between two friends, and the friends don’t want anyone else to read the
-      message no matter what, the basic attack model is formed. In the model, the two friends are the users and anyone else who wants to retrieve the message are the attackers. Another possible concern arises, when cloud computing (uploading files
+      message no matter what, the basic attack model is formed. In the model, the two friends are the users and anyone else who wants to retrieve the message are the attackers.
+      <br><br>
+      Another possible concern arises, when cloud computing (uploading files
       and data onto the cloud) is applied. Cloud computing is extremely common these days since it is able to bring the advantage of storing less information on local machines. This means that more advanced experiments or analysis, for example
       machine learning, can be conducted by renting a server or virtual machine (VM). While there might be a contract between users and the company hosting the cloud that none of the data of the experiment should be shared with any other party,
-      renting a server can implicitly leak your data to the company that owns the server/VM. Consequently, the absolute privacy is not guaranteed in this case. When the problem comes to big data (however useful it may be), yet another technical
+      renting a server can implicitly leak your data to the company that owns the server/VM. Consequently, the absolute privacy is not guaranteed in this case.
+      <br><br>
+      When the problem comes to big data (however useful it may be), yet another technical
       issue appears as big data is highly sensitive and it contains behavioural information about users. Sometimes, with only behavioural data and no additional data about the user, a user can be identified. We can try to fix the problem by simply
       removing the name of the users but privacy concerns still exist. When data is rather complicated and big, it includes a large number of attributes (name, age, sex, educational background, etc.) which can be represented as a <i>n</i>-column
       vector and <i>n</i> is quite large in this case. When <i>n</i> increases, the possibility of two vectors having exactly the same attributes on <i>n</i> dimensions decreases dramatically. Thus, an attacker is relatively easily able to identify
       individual users even if some fields such as “name” are removed. According to a contemporary science journal, for a large enough data set, as long as four attributes, for example locations at four different times, are known, the possibility to
       uniquely identify the individual user is as high as 95%. Therefore, the high probability of correct identification comes at an extremely low cost for the attacker. When an attacker has certain access to part of the data, the user is even more
-      vulnerable and the data becomes hard to anonymize. While a possible solution to this is to disable the direct access to the whole data set, only exposing aggregate data, and letting data to be accessed only by sending queries by authorized
+      vulnerable and the data becomes hard to anonymize.
+      <br><br>
+       While a possible solution to this is to disable the direct access to the whole data set, only exposing aggregate data, and letting data to be accessed only by sending queries by authorized
       analysts, the attackers can still succeed by sending appropriate queries to launch an intersection attack. The attacker can retrieve the data by sending two queries such that the set of the aggregate data of the first query is completely
       contained in the set of data of the second query. Therefore, by correctly modifying the questions asked, the attacker can obtain the data of an individual user by calculating the difference between the two answers.
       <br>
