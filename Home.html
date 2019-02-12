@@ -72,7 +72,7 @@
       <a class="list-group-item list-group-item-action" href="#section01">Research Problem</a>
       <a class="list-group-item list-group-item-action" href="#section02">Different Solutions</a>
       <a class="list-group-item list-group-item-action" href="#section03">Field of Research</a>
-      <a class="list-group-item list-group-item-action" href="#section04">Leading Theory</a>
+      <a class="list-group-item list-group-item-action" href="#section04">Pioneers</a>
     </div>
 
 
@@ -125,10 +125,7 @@ The authors consider the main contribution to be the method of exploiting the no
 </section>
 <section id="section03" class="demo">
   <div id="heading3">
-    Field of Research
-  </div>
-  <div id="subheading3">
-    Differential Privacy
+    Field of Research - Differential Privacy
   </div>
   <div id="text3">
     A method of protecting privacy is keeping the user data in a database which doesn't answer queries when the data is small enough for an attacker to learn anything at the individual level. The attacker, however, can make the queries in such a way that he can deduce the information he wants: for example, if he knows an individual’s data has some specific properties, he can first ask for information about all the users and then query for the users not satisfying the specific properties. The difference in these two queries will be the user’s data. Although this protection technique is flawed, the query-based systems could be a solution to the privacy problem. Differential privacy is a statistical method that adds noise to the user data, making it harder to learn about specific individuals while maintaining accuracy at the population level. The inventors of the technique won the Gödel Prize in 2017 (their paper was published in 2006). Differential privacy can be implemented in two ways: local or private. In local models, the users add noise to their data and send it to an aggregator, which, in turn, sends it to the data scientists. The accumulated noise makes it impractical to learn anything in many real life applications, requiring a larger dataset than would be required if the noise wasn’t added. In global models users give their data to an aggregator, where it is mixed with noise and sent to the data scientist. A first problem with this approach is that the aggregator can be corrupt, resulting in the users losing their privacy. Cryptography has shown, however, that it is possible to perform computations on encrypted data without knowing the decryption key. This means that the information can be encrypted by the users, processed by aggregators and then sent to the data scientists for decryption.
