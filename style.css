@@ -10,9 +10,9 @@ header{
 body{
   padding-left: 20%;
   padding-right: 20%;
-  background: #f9f5d6;
-  background-repeat: no-repeat;
-  background-size: cover;
+//  background: #f9f5d6;
+//  background-repeat: no-repeat;
+//  background-size: cover;
 }
 
 #CollegeLogo img{
@@ -49,7 +49,7 @@ body{
 }
 #navbarNavDropdown{
   font-size: 2rem;
-  background: linear-gradient(to bottom, #f9f5d6, white);
+//  background: linear-gradient(to bottom, #f9f5d6, white);
   border-bottom: 0.05rem solid black;
 }
 
@@ -201,7 +201,7 @@ section h1 {
 
 
 #thanks {
-  background: radial-gradient(#fce0e9,#f9f5d6);
+//  background: radial-gradient(#fce0e9,#f9f5d6);
 }
 #thanks::after {
   content: none;
@@ -253,7 +253,7 @@ section h1 {
 }
 
 #section01 {
-  background: radial-gradient(#f9eb98, #f9f5d6);
+//  background: radial-gradient(#f9eb98, #f9f5d6);
   height: auto;
 }
 #section01 a {
@@ -287,15 +287,15 @@ section h1 {
 }
 
 #section02 {
-  background: radial-gradient(#cdffa8,#f9f5d6);
+//  background: radial-gradient(#cdffa8,#f9f5d6);
   height: auto;
 }
 #section03 {
-  background: radial-gradient(#c1fff8,#f9f5d6);
+//  background: radial-gradient(#c1fff8,#f9f5d6);
   height: auto;
 }
 #section04 {
-  background: radial-gradient(#dcccf9,#f9f5d6);
+//  background: radial-gradient(#dcccf9,#f9f5d6);
   height: auto;
 }
 
