@@ -254,7 +254,6 @@ section h1 {
 
 #section01 {
   background: radial-gradient(#f9eb98, #f9f5d6);
-  width: 1000px;
   height: auto;
 }
 #section01 a {
@@ -276,17 +275,14 @@ section h1 {
 
 #section02 {
   background: radial-gradient(#cdffa8,#f9f5d6);
-  width: 1000px;
   height: auto;
 }
 #section03 {
   background: radial-gradient(#c1fff8,#f9f5d6);
-  width: 1000px;
   height: auto;
 }
 #section04 {
   background: radial-gradient(#dcccf9,#f9f5d6);
-  width: 1000px;
   height: auto;
 }
 
