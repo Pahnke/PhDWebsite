@@ -402,7 +402,7 @@ section h1 {
 }
 #section04 a span {
   position: absolute;
-  top: 0;
+  top: 25px;
   left: 50%;
   width: 24px;
   height: 24px;
